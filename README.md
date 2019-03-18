@@ -17,14 +17,8 @@ class YourClass {
   }
 }
 ```
-this code will produce three metrics by default 
-```
-your_class_request_total(method="processRequest",} 
-your_class_request_succussful(method="processRequest",}  
-your_class_request_time(method="processRequest",}
-```
+Or
 
-the flowing example produce the same result
 ```java
 import com.moabdi.metrics.annotation.Metric;
 class YourClass {
@@ -35,6 +29,13 @@ class YourClass {
   }
 }
 ```
+This code will produce three metrics by default 
+```
+your_class_request_total(method="processRequest",} 
+your_class_request_succussful(method="processRequest",}  
+your_class_request_time(method="processRequest",}
+```
+
 
 ### Custom parameters
 
