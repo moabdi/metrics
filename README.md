@@ -1,4 +1,4 @@
-# metrics
+# Metrics
 Use Prometheus Metrics with annothation custom annotation
 
 If you use Prometheus, you can simply use annotation Metric to count total requests, succussful requests and/or time.
@@ -6,7 +6,7 @@ If you use Prometheus, you can simply use annotation Metric to count total reque
 Counters go up, and reset when the process restarts.
 
 
-#### Default parameters
+### Default parameters
 
 ```java
 import com.moabdi.metrics.annotation.Metric;
@@ -20,10 +20,11 @@ class YourClass {
 }
 ```
 this code will produce three metrics by default 
+```
 *  your_class_request_total(method="processRequest",} 
 *  your_class_request_succussful(method="processRequest",}  
 *  your_class_request_time(method="processRequest",}
-
+```
 
 the flowing example produce the same result
 ```java
@@ -37,7 +38,7 @@ class YourClass {
 }
 ```
 
-#### Custom parameters
+### Custom parameters
 
 ```java
 import com.moabdi.metrics.annotation.Metric;
@@ -68,12 +69,13 @@ class YourClass {
 
 
 The result will be like this: 
+```
 *  test_request_total(endpoint="process",} 
 *  test_request_succussful(endpoint="process",}  
 *  test_request_time(endpoint="process",}
+```
 
-
-#### Others possibilities
+### Others possibilities
 
 ```java
 import com.moabdi.metrics.annotation.Metric;
@@ -104,7 +106,8 @@ class YourClass {
 ```
 
 
-The result will be like this: 
+The result will be like this:
+```
 *  test_request_total(endpoint="first",} 
 *  test_request_total(endpoint="second",} 
 *  test_request_succussful(endpoint="first",}  
@@ -117,5 +120,5 @@ The result will be like this:
 *  test_method_third_time(api="play",}
 
 *  test_single_counter{function="process",} 
-
+```
 
