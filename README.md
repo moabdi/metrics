@@ -1,8 +1,6 @@
 # Metrics
 Using Prometheus Metrics with custom annotation
 
-If you use Prometheus, you can simply use annotation ``` @Metric ``` to active counter of total, succussful requests and/or time.
-
 Counters go up, and reset when the process restarts.
 
 
