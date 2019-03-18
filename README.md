@@ -21,9 +21,9 @@ class YourClass {
 ```
 this code will produce three metrics by default 
 ```
-*  your_class_request_total(method="processRequest",} 
-*  your_class_request_succussful(method="processRequest",}  
-*  your_class_request_time(method="processRequest",}
+your_class_request_total(method="processRequest",} 
+your_class_request_succussful(method="processRequest",}  
+your_class_request_time(method="processRequest",}
 ```
 
 the flowing example produce the same result
@@ -70,9 +70,9 @@ class YourClass {
 
 The result will be like this: 
 ```
-*  test_request_total(endpoint="process",} 
-*  test_request_succussful(endpoint="process",}  
-*  test_request_time(endpoint="process",}
+test_request_total(endpoint="process",} 
+test_request_succussful(endpoint="process",}  
+test_request_time(endpoint="process",}
 ```
 
 ### Others possibilities
@@ -108,17 +108,17 @@ class YourClass {
 
 The result will be like this:
 ```
-*  test_request_total(endpoint="first",} 
-*  test_request_total(endpoint="second",} 
-*  test_request_succussful(endpoint="first",}  
-*  test_request_succussful(endpoint="second",}  
-*  test_request_time(endpoint="first",}
-*  test_request_time(endpoint="second",}
+test_request_total(endpoint="first",} 
+test_request_total(endpoint="second",} 
+test_request_succussful(endpoint="first",}  
+test_request_succussful(endpoint="second",}  
+test_request_time(endpoint="first",}
+test_request_time(endpoint="second",}
 
-*  test_method_third_request_total(api="play",} 
-*  test_method_third_succussful(api="play",}  
-*  test_method_third_time(api="play",}
+test_method_third_request_total(api="play",} 
+test_method_third_succussful(api="play",}  
+test_method_third_time(api="play",}
 
-*  test_single_counter{function="process",} 
+test_single_counter{function="process",} 
 ```
 
