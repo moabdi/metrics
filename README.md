@@ -32,7 +32,7 @@ class YourClass {
 This code will produce three metrics by default 
 ```
 your_class_request_total(method="processRequest",} 
-your_class_request_succussful(method="processRequest",}  
+your_class_request_success(method="processRequest",}  
 your_class_request_time(method="processRequest",}
 ```
 
