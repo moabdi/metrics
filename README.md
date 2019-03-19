@@ -70,11 +70,11 @@ class YourClass {
 The result will be like this: 
 ```
 test_request_total(endpoint="process",} 
-test_request_succussful(endpoint="process",}  
+test_request_success(endpoint="process",}  
 test_request_time(endpoint="process",}
 ```
 
-### Others possibilities
+### Other possibilities
 
 ```java
 import com.moabdi.metrics.annotation.Metric;
@@ -97,7 +97,7 @@ class YourClass {
   }
   
   
-  @Metric(name="test_single_counter", labelNames="function", labelValues="process", counterType=Metric.CounterType.SUCCESSFUL}
+  @Metric(name="test_single_counter", labelNames="function", labelValues="process", counterType=Metric.CounterType.SUCCESS}
   public void fourth() {
     // Your code here.
   }
@@ -109,13 +109,13 @@ The result will be like this:
 ```
 test_request_total(endpoint="first",} 
 test_request_total(endpoint="second",} 
-test_request_succussful(endpoint="first",}  
-test_request_succussful(endpoint="second",}  
+test_request_success(endpoint="first",}  
+test_request_success(endpoint="second",}  
 test_request_time(endpoint="first",}
 test_request_time(endpoint="second",}
 
 test_method_third_request_total(api="play",} 
-test_method_third_request_succussful(api="play",}  
+test_method_third_request_success(api="play",}  
 test_method_third_request_time(api="play",}
 
 test_single_counter{function="process",} 
