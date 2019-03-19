@@ -1,4 +1,4 @@
-# Metrics
+# Metrics Prometheus
 Using Prometheus Metrics with custom annotation
 
 Counters go up, and reset when the process restarts.
@@ -115,8 +115,8 @@ test_request_time(endpoint="first",}
 test_request_time(endpoint="second",}
 
 test_method_third_request_total(api="play",} 
-test_method_third_succussful(api="play",}  
-test_method_third_time(api="play",}
+test_method_third_request_succussful(api="play",}  
+test_method_third_request_time(api="play",}
 
 test_single_counter{function="process",} 
 ```
