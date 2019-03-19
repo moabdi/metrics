@@ -14,7 +14,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 public @interface Metric {
 
-    enum CounterType {TOTAL, SUCCESSFUL, TIME}
+    enum CounterType {TOTAL, SUCCESS, TIME}
 
     @AliasFor("name")
     String value() default "";
@@ -28,6 +28,6 @@ public @interface Metric {
 
     String[] labelNames() default {};
 
-    CounterType[] counterType() default {TOTAL, SUCCESSFUL, TIME};
+    CounterType[] counterType() default {TOTAL, SUCCESS, TIME};
 
 }
