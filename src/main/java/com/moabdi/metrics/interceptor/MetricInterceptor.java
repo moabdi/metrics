@@ -45,8 +45,8 @@ public class MetricInterceptor {
         if (metricParameters.getCounterTypes().contains(CounterType.TIME)) {
             getCounter(metricParameters, CounterType.TIME).inc(time);
         }
-        if (metricParameters.getCounterTypes().contains(CounterType.SUCCESSFUL)) {
-            getCounter(metricParameters, CounterType.SUCCESSFUL).inc();
+        if (metricParameters.getCounterTypes().contains(CounterType.SUCCESS)) {
+            getCounter(metricParameters, CounterType.SUCCESS).inc();
         }
 
         return result;
