@@ -3,7 +3,7 @@ package com.moabdi.metrics.api;
 import com.moabdi.metrics.annotation.Metric;
 import org.springframework.web.bind.annotation.*;
 
-import static com.moabdi.metrics.annotation.Metric.CounterType.SUCCESSFUL;
+import static com.moabdi.metrics.annotation.Metric.CounterType.SUCCESS;
 
 @RestController
 @RequestMapping(value = "/hello")
@@ -26,7 +26,7 @@ public class HelloController {
 
     @DeleteMapping
     @ResponseBody
-    @Metric(name = "delete_metric", counterType = SUCCESSFUL)
+    @Metric(name = "delete_metric", counterType = SUCCESS)
     public String delete() {
         return "deleted";
     }
